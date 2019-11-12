@@ -1,0 +1,24 @@
+
+<div [@fadeIn]   class="viewport">
+  <div *ngFor = "let project of projects; let i = 'index'" class="item" (click)="toggle(i)">
+    <ng-container *ngIf="states[i] != 'show'; else elseBlock">
+      <div  [@fadeIn]  [@genState]="states[i]" id="nameofproject"><h1>{{project.title}}</h1></div> 
+      <div  [@fadeIn]  [@genState]="states[i]" id="position">{{project.position}}</div>
+      <div  [@fadeIn] [@genState]="states[i]" id="sizeofteam"> <span class="title">Size of Team</span> <span id="size">{{project.team}}</span> </div>
+      <div  [@fadeIn]  [@genState]="states[i]" id="stack"> <span class="title">Stack</span> <span id="soft">{{project.stack}}</span></div>
+      <div  [@fadeIn] [@genState]="states[i]" id="link">  
+        <div *ngIf="project.github as ''; else elseBlock">
+          <span class="title">Github</span>
+          <a class="links" href="{{project.github}}">CODE</a>
+        </div>
+        <ng-template #elseBlock><span class="title">Github</span> <span class="links">PRIVATE</span></ng-template>
+      </div>
+    </ng-container>
+    <ng-template #elseBlock>
+      <div [@fadeIn] [@descState]="states[i]" id="desc">
+        <h3>DESCRIPTION</h3> <br> {{project.description}} 
+      </div>
+    </ng-template>
+    <div id="page"><img [@page1State]="states[i]" src="../../assets/circle.svg" alt=""> <img [@page2State]="states[i]" src="../../assets/circle.svg" alt="" id="two"></div>
+  </div>
+</div>

@@ -1,0 +1,71 @@
+@import '../../styles.scss';
+
+.container {
+  position: fixed;
+  top: 47%;
+  right: 15px;
+
+  display: grid;
+  grid-template-columns: 32px 32px;
+  grid-template-rows: 40px 40px 40px;
+  grid-gap: 15px;
+
+  @media (max-width: 700px) {
+    top: 37%;
+  }
+
+  z-index: 1000;
+  
+  .item1{
+    position: relative;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    justify-self: end;
+  }
+  .item2{
+    position: relative;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    justify-self: end;
+  }
+  .item3{
+    position: relative;
+    grid-column-start: 2;
+    grid-row-start: 3;
+    justify-self: end;
+  }
+  .item4{
+    @media (max-width:700px){ 
+      display: none;
+    }
+    padding-top: 5px;
+    grid-column-start: 1;
+    grid-row-start: 2;
+    justify-self: end;
+    cursor: pointer;
+  }
+  .item5{
+    grid-column-start: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    justify-self: center;
+    cursor: pointer;
+
+    transform: rotate(90deg);
+    font-family: $font;
+    color: $font-color;
+    font-size: $font-size_aside;
+  }
+  
+} 
+
+.linkedin:hover{
+  opacity: .5;
+}
+.git:hover{
+  opacity: .5;
+}
+.skills:hover{
+  opacity: .5;
+}
+

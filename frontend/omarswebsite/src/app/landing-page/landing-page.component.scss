@@ -1,0 +1,67 @@
+@import '../../styles.scss';
+
+.container{
+  font-family: Didot, serif;
+  color: $font-color;
+  font-size: 20px;
+
+  display: flex;
+  flex-direction: column;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+
+  width: 35em;
+  height: 30em;
+
+  
+  @media (max-width:700px){  
+    transform: translate(-2%,132%);
+    width: 70%;
+    height: 700px;
+    transform: translate(-47%, -47%);
+  }
+
+  .item1{
+    font-family: $font-title;
+    letter-spacing: 18px;
+    font-size: 40px;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    justify-self: center;
+    padding-bottom: 20px;
+
+    
+    @media (max-width:700px){  
+      font-size:20px;
+    }
+  
+    h1{
+      padding: 0px; 
+      margin: 0px;
+    }
+
+    #top{
+      @media (max-width:700px){  
+        transform: translate(-2%,105%);
+      }
+      transform: translate(-1%,108%);
+      color: $font-sec-color;
+      text-align: center;
+    }
+    #bottom{
+      color: transparent;
+      -webkit-text-stroke-width: 2px;
+      -webkit-text-stroke-color:  $font-color;
+      text-align: center;
+    }
+  }
+  .item2{ 
+    padding-top: 50px;
+    justify-self: center;
+  }
+
+}

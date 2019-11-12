@@ -1,0 +1,143 @@
+@import '../../styles.scss';
+
+
+.viewport{
+  color: $font-color;
+  
+  position: fixed;;
+  display: grid;
+  padding-top: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  height:100%;
+  overflow-y: scroll;
+
+  @media (max-width:700px){
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    gap: 5px;
+    width: 70%;
+    z-index: 0;
+  }
+
+  @media (min-width:1000px){
+    grid-template-columns: auto  auto;
+    grid-template-rows: auto;
+    width: 50%;
+    gap: 15px;
+  }
+
+  .item{
+    font-family: Candara, sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+    overflow: hidden;
+    
+
+    @media (max-width:700px){  
+      height: 240px;
+      width: 210px;
+      padding: 5px;
+    }
+
+    height: 260px;
+    width: 210px;
+    padding: 15px;
+
+    grid-column-start: auto;
+    grid-row-start: auto;
+    justify-self: center;
+    
+    -webkit-box-shadow: 6px 6px 15px 0px  rgb(22, 22, 22);
+    -moz-box-shadow: 6px 6px 15px 0px  rgb(22, 22, 22);
+    box-shadow: 6px 6px 15px 0px  rgb(22, 22, 22);
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    #nameofproject{
+      h1 {
+        font-family: "Old English Text MT", fantasy, serif;
+        color: $font-sec-color;
+      }
+      grid-row-start: auto;
+      place-self: center;
+    }
+    #position{
+      font-style: italic;
+      place-self: center;
+    }
+
+    #sizeofteam{
+      #size{
+        float: right;
+      }
+    }
+    #stack{
+      #soft{
+        float: right;
+      }
+    }
+
+    #desc{
+      overflow: auto;
+      height: 240px;
+      width: 200px;
+
+      @media (max-width:700px){  
+        height: 200px;
+        width: 210px;
+        padding: 5px;
+      }
+        &::-webkit-scrollbar {
+          width: .25em;
+          height: .25em;
+        }
+        &::-webkit-scrollbar-track {
+          border-radius: 10px;
+          -webkit-box-shadow: inset 0 0 3px     rgba(0,0,0,0.3); 
+        }
+        &::-webkit-scrollbar-thumb{
+          background-color: $font-sec-color;
+          -webkit-box-shadow: inset 0 0 3px     rgba(0,0,0,0.5); 
+        }
+    }
+
+    #link{
+        .links{
+          text-decoration: none;
+          float: right;
+          color: $font-sec-color;
+      }
+    }
+
+    #page{
+      place-self: center;
+      #two{
+        padding-left: 5px;
+        width: 25%; 
+        height: 25%; 
+        opacity: .5;
+      }
+    }
+
+  }
+  
+
+  .title{
+    font-weight: 700;
+    font-size: 16px;
+  }
+
+  &::-webkit-scrollbar {
+    width: .25em;
+  }
+  &::-webkit-scrollbar-thumb{
+    background-color: $font-sec-color;
+    -webkit-box-shadow: inset 0 0 3px     rgba(0,0,0,0.5); 
+  }
+}

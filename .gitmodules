@@ -1,0 +1,3 @@
+[submodule "omarswebsite"]
+	path = omarswebsite
+	url = ./frontend/omarswebsite

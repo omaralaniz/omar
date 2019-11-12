@@ -1,0 +1,24 @@
+
+<div class="container"> 
+  <div [@linkState]="state" class="item1">
+    <a href={{linkedin}}>
+      <span class="linkedin"><img src={{linkedin_logo}} alt=""></span>
+    </a>
+  </div>
+  <div [@linkState]="state" class="item2">
+    <a href={{github}}>
+      <span class="git"><img src={{git_logo}} alt=""></span>
+    </a>
+  </div>
+  <div [@linkState]="state" class="item3">
+    <a href={{resume}}>
+      <span class="skills"><img src={{resume_logo}} alt=""></span>
+    </a>
+  </div>
+  <div [@arrowState]="state" class="item4">
+    <img src={{arrow_show}} alt="" (click)="toggle()">
+  </div>
+  <div [@infoState]="state" class="item5" (click)="toggle()">
+    Information
+  </div>
+</div>
