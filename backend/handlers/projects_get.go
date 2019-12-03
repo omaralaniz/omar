@@ -9,7 +9,7 @@ import (
 
 func ProjectsGetAll(projects *repository.Projects) gin.HandlerFunc {
 	return func(c *gin.Context) {
-		results := projects.GetAll()
+		results := projects.GetProjects()
 		c.JSON(http.StatusOK, results)
 	}
 }
