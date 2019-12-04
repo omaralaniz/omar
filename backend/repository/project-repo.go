@@ -13,7 +13,10 @@ func New() *Projects {
 	return &Projects{}
 }
 
-func (r *Projects) GetProjects() []entities.Project {
-	database.GetDocuments(&r.Projects.Projects, "projects")
+func (r *Projects) GetAll() []entities.Project {
+	if len(r.Projects.Projects) == 0 {
+		database.GetDocuments(&r.Projects.Projects, "projects")
+	}
+
 	return r.Projects.Projects
 }

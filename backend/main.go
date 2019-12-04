@@ -12,7 +12,7 @@ func main() {
 
 	api := r.Group("/api")
 	api.GET("/ping", handlers.Ping())
-	api.GET("/projects", handlers.ProjectsGetAll(projects))
+	api.GET("/projects", handlers.GetAll(projects))
 
 	err := r.Run("0.0.0.0:8080")
 
