@@ -1,24 +1,47 @@
 
 <div class="container"> 
-  <div [@linkState]="state" class="item1">
+  <div *ngIf="screenWidth > 820" [@linkState]="state" class="item1">
     <a href={{linkedin}}>
-      <span class="linkedin"><img src={{linkedin_logo}} alt=""></span>
+      <span class="linkedin"><img src={{linkedin_logo}} alt="LinkedIn"></span>
     </a>
   </div>
-  <div [@linkState]="state" class="item2">
+  <div *ngIf="screenWidth > 820" [@linkState]="state" class="item2">
     <a href={{github}}>
-      <span class="git"><img src={{git_logo}} alt=""></span>
+      <span class="git"><img src={{git_logo}} alt="GitHub"></span>
     </a>
   </div>
-  <div [@linkState]="state" class="item3">
+  <div *ngIf="screenWidth > 820" [@linkState]="state" class="item3">
     <a href={{resume}}>
-      <span class="skills"><img src={{resume_logo}} alt=""></span>
+      <span class="skills"><img src={{resume_logo}} alt="Resume"></span>
     </a>
   </div>
-  <div [@arrowState]="state" class="item4">
+  <div *ngIf="screenWidth > 820" [@arrowState]="state" class="item4">
     <img src={{arrow_show}} alt="" (click)="toggle()">
   </div>
-  <div [@infoState]="state" class="item5" (click)="toggle()">
+  
+
+  <div *ngIf="screenWidth < 820" [@mobileState]="state" class="item1">
+    <a href={{linkedin}}>
+      <span class="linkedin"><img src={{linkedin_mobile}} alt="LinkedIn"></span>
+    </a>
+  </div>
+  <div *ngIf="screenWidth < 820" [@mobileState]="state" class="item2">
+    <a href={{github}}>
+      <span class="git"><img src={{github_mobile}} alt="GitHub"></span>
+    </a>
+  </div>
+  <div *ngIf="screenWidth < 820" [@mobileState]="state" class="item3">
+    <a href={{resume}}>
+      <span class="skills"><img src={{resume_mobile}} alt="Resume"></span>
+    </a>
+  </div>
+
+
+
+  <div *ngIf="screenWidth > 820" [@infoState]="state" class="item5" (click)="toggle()">
     Information
+  </div>
+  <div *ngIf="screenWidth < 820" [@plusState]="state" class="item6" (click)="toggle()">
+    +
   </div>
 </div>

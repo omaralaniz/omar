@@ -10,7 +10,7 @@
   @media (max-width:700px){ 
     display: inline-grid;
     top: 35%; 
-    font-size: 18px;
+    font-size: 14px;
     grid-template-columns: 30px;
     grid-template-rows: 135px 135px;  
   }
@@ -23,24 +23,29 @@
 
   .item1{
     @media (min-width:1000px) {
-      padding-bottom: 30px;
+      padding-bottom: 50px;
     }
     grid-row-start: 1;
     grid-row-end: 1;
 
     @media (max-width:700px){  
       transform: rotate(90deg);
-      font-size: 18px;
+      font-size: 14px;
       height: 30px;
     }
   }
   .item2{ 
     grid-row-start: 2;
     grid-row-end: 2;
+    @media (min-width:1000px) {
+      padding-bottom: 50px;
+    }
+    grid-row-start: 2;
+    grid-row-end: 2;
     
     @media (max-width:700px){  
       transform: rotate(90deg);
-      font-size: 18px;
+      font-size: 14px;
       height: 30px;
 
       grid-row-start: 2;

@@ -56,6 +56,17 @@
     color: $font-color;
     font-size: $font-size_aside;
   }
+  .item6{
+    grid-column-start: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    justify-self: center;
+    cursor: pointer;
+
+    font-family: $font;
+    color: $font-color;
+    font-size: $font-size_aside;
+  }
   
 } 
 

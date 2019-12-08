@@ -1,4 +1,4 @@
-import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy, HostListener } from '@angular/core';
 import { ProjectsService } from '../projects.service';
 import {
   trigger,
@@ -7,7 +7,8 @@ import {
   animate,
   transition,
   query,
-  stagger
+  stagger,
+  keyframes
 } from '@angular/animations';
 
 @Component({
@@ -22,15 +23,7 @@ import {
         animate('250ms ease-in', style({opacity: 1})),
       ])
     ]),
-    trigger('descState', [
-      state('hide', style({
-      })),
-      state('show',   style({
-      })),
-      transition('show => hide', animate('1s ease-out')),
-      transition('hide => show', animate('1s ease-in'))
-    ]),
-    trigger('genState', [
+    trigger('easeIn', [
       state('hide', style({
       })),
       state('show',   style({
@@ -63,10 +56,22 @@ import {
       transition('hide => show', animate('250ms ease-out')),
       transition('show => hide', animate('250ms ease-in'))
     ]),
+    trigger('cardAnimation', [
+      transition('*=>*', [
+        query(':enter', style({opacity: 0}), {optional: true}),
+
+        query(':enter', stagger('300ms', [
+          animate('.5s ease-in', keyframes([
+            style({ opacity: 0, transform: 'translateY(100%) scale(.5)', offset: 0 }),
+            style({ opacity: .5, transform: 'translateY(10px) scale(.75)', offset: 0.3 }),
+            style({ opacity: 1, transform: 'translateY(0)', offset: 1 }),
+          ])) 
+        ]), {optional: true})
+      ])
+    ])
   ]
 })
 export class ProjectsPageComponent implements OnInit {
-
   projects = [];
   state = 'show';
 

@@ -1,7 +1,7 @@
 @import '../../styles.scss';
 
 
-.viewport{
+.main-warp{
   color: $font-color;
   
   position: fixed;;
@@ -29,18 +29,13 @@
     gap: 15px;
   }
 
-  .item{
+  .card{
     font-family: Candara, sans-serif;
     font-weight: 100;
     font-size: 14px;
+    background-color: #202020;
     overflow: hidden;
-    
-
-    @media (max-width:700px){  
-      height: 240px;
-      width: 210px;
-      padding: 5px;
-    }
+    cursor: pointer;
 
     height: 260px;
     width: 210px;
@@ -50,14 +45,24 @@
     grid-row-start: auto;
     justify-self: center;
     
-    -webkit-box-shadow: 6px 6px 15px 0px  rgb(22, 22, 22);
-    -moz-box-shadow: 6px 6px 15px 0px  rgb(22, 22, 22);
-    box-shadow: 6px 6px 15px 0px  rgb(22, 22, 22);
-
     display: flex;
     flex-direction: column;
-
     justify-content: space-between;
+
+    @media (max-width:700px){  
+      height: 240px;
+      width: 210px;
+      padding: 5px;
+      -webkit-box-shadow: 6px 6px 15px 0px  rgb(22, 22, 22);
+      -moz-box-shadow: 6px 6px 15px 0px  rgb(22, 22, 22);
+      box-shadow: 6px 6px 15px 0px  rgb(22, 22, 22);
+    }
+
+    .title{
+    font-weight: 700;
+    font-size: 16px;
+  }
+
 
     #nameofproject{
       h1 {
@@ -126,12 +131,6 @@
     }
 
   }
-  
-
-  .title{
-    font-weight: 700;
-    font-size: 16px;
-  }
 
   &::-webkit-scrollbar {
     width: .25em;
@@ -140,4 +139,13 @@
     background-color: $font-sec-color;
     -webkit-box-shadow: inset 0 0 3px     rgba(0,0,0,0.5); 
   }
+
+  @media (min-width:1000px) {
+    .card:hover{
+      -webkit-box-shadow: 6px 6px 15px 0px  rgb(22, 22, 22);
+      -moz-box-shadow: 6px 6px 15px 0px  rgb(22, 22, 22);
+      box-shadow: 6px 6px 15px 0px  rgb(22, 22, 22);
+    } 
+  }
+
 }

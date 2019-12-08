@@ -20,7 +20,7 @@
   
   @media (max-width:700px){  
     transform: translate(-2%,132%);
-    width: 70%;
+    width: 60%;
     height: 700px;
     transform: translate(-47%, -47%);
   }
@@ -45,8 +45,8 @@
     }
 
     #top{
-      @media (max-width:700px){  
-        transform: translate(-2%,105%);
+      @media (max-width:820px){  
+        transform: translate(-2%,100%);
       }
       transform: translate(-1%,108%);
       color: $font-sec-color;
@@ -61,6 +61,9 @@
   }
   .item2{ 
     padding-top: 50px;
+    @media (max-width:820px) {
+      transform: translateY(10%);
+    }
     justify-self: center;
   }
 
