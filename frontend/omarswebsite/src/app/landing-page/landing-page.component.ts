@@ -1,4 +1,4 @@
-import { Component, OnInit, HostListener, Host } from '@angular/core';
+import { Component, OnInit, HostListener} from '@angular/core';
 import {
   trigger,
   state,
@@ -34,18 +34,6 @@ import {
           style({transform: 'translate(-1%,108%)', opacity: .6, offset: .8}),
           style({transform: 'translateY(107%)', opacity: .8, offset: .9}),
           style({transform: 'translate(-1%,108%)', opacity: 1, offset: 1}),
-        ]))
-      ])
-    ]),
-    trigger('body', [
-      transition(':enter', [
-        animate('1s ease-in', keyframes([
-          style({opacity: 0, offset: .0}),
-          style({ opacity: 1, offset: .4}),
-          style({opacity: .4, offset: .6}),
-          style({opacity: 1, offset: .8}),
-          style({opacity: 0, offset: .9}),
-          style({opacity: 1, offset: 1}),
         ]))
       ])
     ])

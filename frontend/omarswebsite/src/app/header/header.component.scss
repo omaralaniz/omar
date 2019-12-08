@@ -1,0 +1,35 @@
+@import '../../styles.scss';
+
+.landing-page{
+  font-family: $font-title;
+  letter-spacing: 18px;
+  font-size: 35px;
+  float: left;
+  position: fixed;
+
+  
+  @media (max-width:700px){  
+    font-size:20px;
+  }
+
+  h1{
+    padding: 0px; 
+    margin: 0px;
+  }
+
+  #top{
+    @media (max-width:820px){  
+      transform: translate(-2%,100%);
+    }
+    transform: translate(5%, 10%);
+    color: $font-sec-color;
+    text-align: center;
+  }
+  #bottom{
+    transform: translate(6%, -95%);
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color:  $font-color;
+    text-align: center;
+  }
+}

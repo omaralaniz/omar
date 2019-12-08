@@ -13,6 +13,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { ProjectsPageComponent } from './projects-page/projects-page.component';
 import { LinksBarComponent } from './links-bar/links-bar.component';
+import { HeaderComponent } from './header/header.component';
 
 const routes: Routes = [
   { path: '', component: LandingPageComponent },
@@ -26,7 +27,8 @@ const routes: Routes = [
     NavBarComponent,
     LandingPageComponent,
     ProjectsPageComponent,
-    LinksBarComponent
+    LinksBarComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
