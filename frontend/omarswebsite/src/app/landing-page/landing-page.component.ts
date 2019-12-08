@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener, Host } from '@angular/core';
 import {
   trigger,
   state,
@@ -52,8 +52,20 @@ import {
   ]
 })
 export class LandingPageComponent implements OnInit {
-  constructor() { }
+  screenHeight: number;
+  screenWidth: number;
+
+  constructor() { 
+    this.getScreenSize;
+  }
+
+  @HostListener('window:resize', ['$event'])
+  getScreenSize($event?){
+    this.screenHeight = window.innerHeight;
+    this.screenWidth = window.innerWidth;
+  }
 
   async ngOnInit() {
+    this.getScreenSize();
   }
 }

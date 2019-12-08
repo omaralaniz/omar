@@ -1,7 +1,8 @@
 <div class="container">
   <div class="item1">
-      <h1 [@top] id="top">Omar Alaniz</h1>
-      <h1 [@bottom] id="bottom">Omar Alaniz</h1>
+      <h1 *ngIf="screenWidth > 820"  [@top] id="top">Omar Alaniz</h1>
+      <h1 *ngIf="screenWidth > 820"  [@bottom] id="bottom">Omar Alaniz</h1>
+      <h1 *ngIf="screenWidth < 820"  [@top] id="top">Omar Alaniz</h1>
   </div>
 
   <div [@body] class="item2">
