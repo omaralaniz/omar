@@ -2,16 +2,8 @@
     <link rel="icon" href="../assets/logo.png">
 </head>
 <title>{{title}}</title>
-<div class="container">
-    <div class="item1">
-        <app-nav-bar></app-nav-bar>
-    </div>
 
-    <div class="item2">
-        <app-links-bar></app-links-bar>
-    </div>
-
-    <div class="item3">
-        <router-outlet></router-outlet>
-    </div>
-</div>
+<app-header></app-header>
+<app-nav-bar></app-nav-bar>
+<app-links-bar></app-links-bar>
+<router-outlet></router-outlet>
