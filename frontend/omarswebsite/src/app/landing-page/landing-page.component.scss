@@ -19,26 +19,21 @@
   height: 25em;
 
   
-  @media (max-width:700px){  
-    transform: translate(-2%,132%);
+  @media (max-width:820px){  
     width: 60%;
     height: 700px;
-    transform: translate(-47%, -47%);
   }
 
   .body{ 
     padding-left: 10px;
     padding-right: 10px;
-    transform: translateY(15%);
 
     #hello{
       font-size: 36px;
       color: $font-sec-color;
       font-family: $font-title;
     }
-    @media (max-width:820px) {
-      transform: translateY(10%);
-    }
+
     flex-basis: auto;
     
     -webkit-box-shadow: 8px 8px 15px 0px  rgb(22, 22, 22);

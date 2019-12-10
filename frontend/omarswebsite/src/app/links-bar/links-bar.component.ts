@@ -28,6 +28,7 @@ import {
       })),
       state('show',   style({
         transform: 'translateX(-35%) rotate(90deg)',
+        color: "#FFA8A8"
       })),
       transition('hide => show', animate('250ms ease-out')),
       transition('show => hide', animate('250ms ease-in'))
@@ -48,6 +49,7 @@ import {
       })),
       state('show',   style({
         transform: 'translateY(-235%) rotate(45deg)',
+        color: "#FFA8A8"
       })),
       transition('hide => show', animate('250ms ease-out')),
       transition('show => hide', animate('250ms ease-in'))

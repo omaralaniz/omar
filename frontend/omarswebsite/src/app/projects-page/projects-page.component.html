@@ -16,7 +16,7 @@
     </ng-container>
     <ng-template #elseBlock>
       <div [@fadeIn] [@easeIn]="states[i]" id="desc">
-        <h3>DESCRIPTION</h3> <br> {{project.description}} 
+        <h3 id="header-desc">DESCRIPTION</h3> <br> {{project.description}} 
       </div>
     </ng-template>
     <div id="page"><img [@page1State]="states[i]" src="../../assets/circle.svg" alt=""> <img [@page2State]="states[i]" src="../../assets/circle.svg" alt="" id="two"></div>
