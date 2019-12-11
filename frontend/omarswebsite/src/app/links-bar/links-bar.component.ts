@@ -5,7 +5,6 @@ import {
   style,
   animate,
   transition,
-  keyframes,
 } from '@angular/animations';
 
 @Component({
@@ -54,7 +53,6 @@ import {
       transition('hide => show', animate('250ms ease-out')),
       transition('show => hide', animate('250ms ease-in'))
     ]),
-    ,
     trigger('mobileState', [
       state('show', style({
         transform: "translateX(0)",
