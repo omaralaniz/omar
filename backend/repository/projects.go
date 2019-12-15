@@ -6,7 +6,7 @@ import (
 )
 
 type Projects struct {
-	Pointer entities.Projects
+	PointerTo entities.Projects
 }
 
 func New() *Projects {
@@ -14,9 +14,9 @@ func New() *Projects {
 }
 
 func (r *Projects) GetAll() []entities.Project {
-	if len(r.Pointer.Projects) == 0 {
-		database.GetDocuments(&r.Pointer.Projects, "projects")
+	if len(r.PointerTo.Projects) == 0 {
+		database.GetDocuments(&r.PointerTo.Projects, "projects")
 	}
 
-	return r.Pointer.Projects
+	return r.PointerTo.Projects
 }
