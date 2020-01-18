@@ -1,8 +1,8 @@
 package repository
 
 import (
-	"github.com/omaralaniz/omar/database"
-	"github.com/omaralaniz/omar/entities"
+	"github.com/omaralaniz/omar/backend/database"
+	"github.com/omaralaniz/omar/backend/entities"
 )
 
 type Projects struct {

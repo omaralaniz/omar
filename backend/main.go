@@ -1,8 +1,8 @@
 package main
 
 import (
-	handler "github.com/omaralaniz/omar/handlers"
-	repo "github.com/omaralaniz/omar/repository"
+	handler "github.com/omaralaniz/omar/backend/handlers"
+	repo "github.com/omaralaniz/omar/backend/repository"
 	"github.com/gin-gonic/gin"
 )
 

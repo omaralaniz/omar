@@ -3,7 +3,7 @@ package handlers
 import (
 	"net/http"
 
-	repo "github.com/omaralaniz/omar/repository"
+	repo "github.com/omaralaniz/omar/backend/repository"
 	"github.com/gin-gonic/gin"
 )
 
