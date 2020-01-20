@@ -1,12 +1,12 @@
-FROM golang
+# FROM golang
 
-ENV GO111MODULE=on
+# ENV GO111MODULE=on
 
-WORKDIR app/
-COPY . .
+# WORKDIR app/
+# COPY . .
 
-EXPOSE 8080
+# EXPOSE 8080
 
-RUN GOOS=windows GOARCH=amd64 go build
+# RUN CGO_ENABLED=0 GOOS=windows GOARCH=amd64 go build
 
-ENTRYPOINT [ "/app/backend" ]
+# ENTRYPOINT [ "/app/backend" ]
