@@ -28,12 +28,13 @@ $omarswebsite-theme: mat-light-theme($omarswebsite-primary, $omarswebsite-accent
 
 /* You can add global styles to this file, and also import other style files */
 $primary-color:#1E1E1E;
-$font-title:   "Old English Text MT", fantasy, serif;
+$font-title: "Old English Text MT", fantasy, serif;
 $font: "Bookman Old Style";
 $font-color:#FFFAF1;
 $font-size_aside: 24px;
-$font-sec-color: #FAED98;
+$font-sec-color: #E84855;
 $font-third-color: #FFA8A8;
+$sec-color: #FAED98;
 
 html {
   background-color: $primary-color;
