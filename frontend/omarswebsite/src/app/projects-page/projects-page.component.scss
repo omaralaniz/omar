@@ -71,7 +71,7 @@
     #nameofproject{
       h1 {
         font-family: "Old English Text MT", fantasy, serif;
-        color: $font-sec-color;
+        color: $font-color;
       }
       grid-row-start: auto;
       place-self: center;
@@ -98,7 +98,7 @@
       width: 200px;
 
       #header-desc{
-        color: $font-sec-color;
+        color:$font-sec-color;
       }
 
       @media (max-width:820px){  
