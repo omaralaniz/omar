@@ -20,7 +20,7 @@ import {
     trigger('fadeIn', [
       transition(':enter', [
         style({opacity: 0}),
-        animate('250ms ease-in', style({opacity: 1})),
+        animate('150ms ease-in', style({opacity: 1})),
       ])
     ]),
     trigger('easeIn', [
@@ -39,8 +39,8 @@ import {
         height: '25%', 
         opacity: '.5'
       })),
-      transition('hide => show', animate('250ms ease-out')),
-      transition('show => hide', animate('250ms ease-in'))
+      transition('hide => show', animate('150ms ease-out')),
+      transition('show => hide', animate('150ms ease-in'))
     ]),
     trigger('page2State', [
       state('hide', style({
@@ -53,8 +53,8 @@ import {
         height: '40%',
         opacity: '1' 
       })),
-      transition('hide => show', animate('250ms ease-out')),
-      transition('show => hide', animate('250ms ease-in'))
+      transition('hide => show', animate('150ms ease-out')),
+      transition('show => hide', animate('150ms ease-in'))
     ]),
     trigger('cardAnimation', [
       transition('*=>*', [
@@ -83,7 +83,6 @@ export class ProjectsPageComponent implements OnInit {
   }
 
   ngOnInit() {
-    
   }
 
   async getProjects(){

@@ -1,16 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="30.059" height="25.149" viewBox="0 0 30.059 25.149">
-  <g id="arrow-show" transform="translate(-1873.942 -447.783)">
-    <g id="arrow-show-2" data-name="arrow-show" transform="matrix(1, -0.017, 0.017, 1, 1888.942, 448.038)">
+<svg xmlns="http://www.w3.org/2000/svg" width="18.017" height="15.029" viewBox="0 0 18.017 15.029">
+  <g id="arrow-show" transform="translate(-1873.938 -447.796)">
+    <g id="arrow-show-2" data-name="arrow-show" transform="matrix(1, -0.017, 0.017, 1, 1882.938, 447.958)">
       <g id="Group_8" data-name="Group 8" transform="translate(0 0)">
         <g id="Group_7" data-name="Group 7">
-          <path id="Path_5" data-name="Path 5" d="M4.915,12.443l9.314,9.314a1.365,1.365,0,0,1,0,1.926l-.816.816a1.364,1.364,0,0,1-1.926,0L.4,13.41a1.374,1.374,0,0,1,0-1.933L11.477.4A1.364,1.364,0,0,1,13.4.4l.816.816a1.364,1.364,0,0,1,0,1.926Z" fill="#fffaf1"/>
+          <path id="Path_5" data-name="Path 5" d="M2.937,7.426l5.583,5.566a.814.814,0,0,1,0,1.151l-.489.487a.819.819,0,0,1-1.154,0L.229,8a.82.82,0,0,1,0-1.155L6.87.228a.82.82,0,0,1,1.155,0l.489.487a.813.813,0,0,1,0,1.151Z" fill="#fffaf1"/>
         </g>
       </g>
     </g>
-    <g id="arrow-show-3" data-name="arrow-show" transform="matrix(1, -0.017, 0.017, 1, 1873.942, 448.038)">
+    <g id="arrow-show-3" data-name="arrow-show" transform="matrix(1, -0.017, 0.017, 1, 1873.947, 447.958)">
       <g id="Group_8-2" data-name="Group 8" transform="translate(0 0)">
         <g id="Group_7-2" data-name="Group 7">
-          <path id="Path_5-2" data-name="Path 5" d="M4.915,12.443l9.314,9.314a1.365,1.365,0,0,1,0,1.926l-.816.816a1.364,1.364,0,0,1-1.926,0L.4,13.41a1.374,1.374,0,0,1,0-1.933L11.477.4A1.364,1.364,0,0,1,13.4.4l.816.816a1.364,1.364,0,0,1,0,1.926Z" fill="#fffaf1"/>
+          <path id="Path_5-2" data-name="Path 5" d="M2.937,7.426l5.583,5.566a.814.814,0,0,1,0,1.151l-.489.487a.819.819,0,0,1-1.154,0L.229,8a.82.82,0,0,1,0-1.155L6.87.228a.82.82,0,0,1,1.155,0l.489.487a.813.813,0,0,1,0,1.151Z" fill="#fffaf1"/>
         </g>
       </g>
     </g>
