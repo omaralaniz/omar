@@ -19,7 +19,7 @@
     grid-template-rows: auto;
     height: 90%;
     top: 55%;
-    gap: 5px;
+    gap: 30px;
     width: 70%;
     
   }
@@ -53,16 +53,15 @@
 
     @media (max-width:820px){  
       padding-top: 0px;
-      padding-bottom: 10px;
       -webkit-box-shadow: 
-        -6px -6px 12px 0  rgb(49, 49, 49),
-        6px 6px 12px 0  rgb(0, 0, 0, 1);  
+        -3px -3px 12px 0  rgb(49, 49, 49),
+        4px 4px 12px 0  rgb(0, 0, 0, 1);  
       -moz-box-shadow: 
-        -6px -6px 12px 0  rgb(49, 49, 49),
-        6px 6px 12px 0  rgb(0, 0, 0, 1);  
+        -3px -3px 12px 0  rgb(49, 49, 49),
+        4px 4px 12px 0  rgb(0, 0, 0, 1);  
       box-shadow:  
-        -6px -6px 12px 0  rgb(49, 49, 49),
-        6px 6px 12px 0  rgb(0, 0, 0, 1); 
+        -3px -3px 12px 0  rgb(49, 49, 49),
+        4px 4px 12px 0  rgb(0, 0, 0, 1); 
     }
     
     -webkit-box-shadow: 

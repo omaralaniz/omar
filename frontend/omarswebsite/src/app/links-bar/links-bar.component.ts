@@ -56,7 +56,6 @@ import {
         transform: "rotate(90deg)"
       })),
       state('show',   style({
-        display: "none"
       })),
       transition('hide => show', animate('150ms ease-out')),
       transition('show => hide', animate('150ms ease-in'))
