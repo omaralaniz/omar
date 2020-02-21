@@ -14,11 +14,7 @@
     <a href={{resume}}>
       <span class="skills"><img src={{resume_logo}} alt="Resume"></span>
     </a>
-  </div>
-  <div *ngIf="screenWidth > 820" [@arrowState]="state" class="item4">
-    <img src={{arrow_show}} alt="" (click)="toggle()">
-  </div>
-  
+  </div> 
 
   <!-- Mobile screens -->
 
@@ -38,12 +34,14 @@
     </a>
   </div>
 
-
-
+  <div *ngIf="screenWidth > 820" [@arrowState]="state" class="item4">
+    <img src={{arrow_show}} alt="" (click)="toggle()">
+  </div>
   <div *ngIf="screenWidth > 820" [@infoState]="state" class="item5" (click)="toggle()">
     Information
   </div>
+  
   <div *ngIf="screenWidth < 820" [@plusState]="state" class="item6" (click)="toggle()">
-    +
+    + <span [@infoMobile]="state" id="info">Information</span>
   </div>
 </div>

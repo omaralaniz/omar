@@ -12,11 +12,11 @@
     top: 35%; 
     font-size: 14px;
     grid-template-columns: 30px;
-    grid-template-rows: 135px 135px;  
+    grid-template-rows: 135px 135px; 
   }
 
   top: 50%;
-  left: 20px;
+  left: 15px;
   list-style-type: none;
 
   z-index: 10000;
@@ -61,9 +61,11 @@ a{
 }
 
 .active-link{ 
-  color: #C19AB7;
+  padding-bottom: 1px;
+  border-bottom: 1px solid $font-third-color;
+  font-style: italic;
 }
 
 a:hover{
-  opacity: .5;
+  font-style: italic;
 }

@@ -26,14 +26,19 @@ $omarswebsite-theme: mat-light-theme($omarswebsite-primary, $omarswebsite-accent
 // that you are using.
 @include angular-material-theme($omarswebsite-theme);
 
+
+@import url('https://fonts.googleapis.com/css?family=Monoton|Righteous&display=swap');
+
+
 /* You can add global styles to this file, and also import other style files */
 $primary-color:#1E1E1E;
-$font-title: "Old English Text MT", fantasy, serif;
-$font: "Bookman Old Style";
+$font-title: 'Righteous', cursive;
+$font-sec: 'Monoton', cursive;
+$font: Didot, serif;
 $font-color:#FFFAF1;
-$font-size_aside: 24px;
+$font-size_aside: 16px;
 $font-sec-color: #E84855;
-$font-third-color: #FFA8A8;
+$font-third-color: #C19AB7;
 $sec-color: #FAED98;
 
 html {
