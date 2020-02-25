@@ -20,9 +20,9 @@
   @media (max-width:820px){  
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     height: 90%;
     top: 55%;
-    gap: 5px;
     width: 70%;
     padding-left: 25px;
   }
@@ -43,6 +43,7 @@
 
       align-self: center;
       padding-top: 15%;
+      padding-bottom: 14px;
     }
 
     #impact-red{
@@ -77,8 +78,6 @@
   
     @media (max-width:820px){  
       font-size: 16px;
-      padding-top: 30px;
-
       &::-webkit-scrollbar {
         display: none;
       }
@@ -97,16 +96,6 @@
     font-size: 18px;
     line-height: 150%;
 
-  
-  
-    #hello{
-      @media (max-width:820px){  
-        font-size: 18px;
-      }
-      font-size: 24px;
-      font-family: $font-title;
-      color: $font-sec-color;
-    }
   }
 
 }
