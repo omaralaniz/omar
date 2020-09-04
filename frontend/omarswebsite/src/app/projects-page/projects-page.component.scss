@@ -6,8 +6,8 @@
 
   position: fixed;;
   display: grid;
-  padding-top: 10px;
-  top: 52%;
+  padding-top: 45px;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 
@@ -32,9 +32,9 @@
   }
 
   .card{
-    font-family: Candara, sans-serif;
+    font-family: $font-third;
     font-weight: 100;
-    font-size: 16px;
+    font-size: 15px;
     overflow: hidden;
     cursor: pointer;
 
@@ -84,6 +84,7 @@
       h1 {
         font-family: $font-title;
         color: $font-color;
+        text-decoration: underline $font-sec-color;
       }
       grid-row-start: auto;
       place-self: center;
@@ -111,6 +112,7 @@
 
       #header-desc{
         color:$font-sec-color;
+        font-weight: 900;
       }
 
       @media (max-width:820px){  

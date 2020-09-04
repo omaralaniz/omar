@@ -57,15 +57,10 @@
 a{
   font-size: $font-size_aside;
   text-decoration: none;
-  color: $font-color;
+  color: $font-color;;
 }
 
 .active-link{ 
   padding-bottom: 1px;
-  border-bottom: 1px solid $font-third-color;
-  font-style: italic;
-}
-
-a:hover{
-  font-style: italic;
+  border-bottom: 2px solid $font-third-color;
 }

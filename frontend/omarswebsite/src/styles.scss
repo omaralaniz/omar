@@ -28,17 +28,19 @@ $omarswebsite-theme: mat-light-theme($omarswebsite-primary, $omarswebsite-accent
 
 
 @import url('https://fonts.googleapis.com/css?family=Monoton|Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Baloo+Chettan+2:500&display=swap');
 
 
 /* You can add global styles to this file, and also import other style files */
 $primary-color:#1E1E1E;
 $font-title: 'Righteous', cursive;
 $font-sec: 'Monoton', cursive;
+$font-third: 'Baloo Chettan 2', cursive;
 $font: Didot, serif;
 $font-color:#FFFAF1;
 $font-size_aside: 16px;
 $font-sec-color: #E84855;
-$font-third-color: #C19AB7;
+$font-third-color: #c5ff00;
 $sec-color: #FAED98;
 
 html {

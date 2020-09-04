@@ -1,7 +1,7 @@
 @import '../../styles.scss';
 
 .container{
-  font-family: $font;
+  font-family: $font-third;
   color: $font-color;
 
   position: absolute;
@@ -49,29 +49,30 @@
     #impact-red{
       font-family: $font-sec;
       color: $font-sec-color;
+      text-shadow: 0 0 10px #FF0000;
     }
 
     #impact-white{
-      font-family: $font-sec;
-      color: $font-sec-color;
-    }
-
-    #old-white{
       font-family: $font-sec;
       font-size: 40px;
       color:$font-color;
       @media (max-width:820px){  
         font-size: 25px;
       }
+
     }
 
   }
 
   .body{ 
 
-    overflow-y: scroll;
+    grid-column-start: 2;
+    grid-column-end: end;
+    justify-self: end;
 
-    
+    #header{
+      text-decoration: underline $font-sec-color;
+    }
     &::-webkit-scrollbar {
       display: none;
     }
@@ -81,6 +82,7 @@
       &::-webkit-scrollbar {
         display: none;
       }
+      padding-left: 1.25rem;
     }
 
     @media (min-width:1000px){
@@ -88,12 +90,8 @@
       padding-top: 80px;
       justify-self: center;
   }
-    
-    grid-column-start: 2;
-    grid-column-end: end;
-    justify-self: end;
 
-    font-size: 18px;
+    font-size: 14px;
     line-height: 150%;
 
   }

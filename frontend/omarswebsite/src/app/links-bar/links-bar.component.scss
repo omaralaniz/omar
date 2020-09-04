@@ -4,6 +4,9 @@
   position: fixed;
   top: 47%;
   right: 15px;
+  @media (max-width: 820px) {
+    right: 20px;
+  }
 
   display: grid;
   grid-template-columns: 32px 32px;
@@ -74,6 +77,7 @@
     transform: rotate(90deg);
 
     #info{
+      color: $font-color;
       transform: rotate(90deg);
     }
   }
@@ -88,8 +92,4 @@
 }
 .skills:hover{
   opacity: .5;
-}
-
-.item4:hover ~ .item5{
-  font-style: italic;
 }
