@@ -3,7 +3,7 @@
  <img width=200px height=200px src="frontend/omarswebsite/src/assets/o-logo.svg" alt="Project logo"></a>
 </p>
 
-<h3 align="center">Project Title</h3>
+<h3 align="center">omaralaniz.com</h3>
 
 <div align="center">
 
