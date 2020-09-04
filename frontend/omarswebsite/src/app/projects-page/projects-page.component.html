@@ -2,11 +2,11 @@
 <div [@cardAnimation]='projects.length'   class="main-warp">
   <div class="card"*ngFor = "let project of projects; let i = 'index'" (click)="toggle(i)">
     <ng-container *ngIf="states[i] != 'show'; else elseBlock">
-      <div  [@fadeIn]  [@easeIn]="states[i]" id="nameofproject"><h1>{{project.title}}</h1></div> 
-      <div  [@fadeIn]  [@easeIn]="states[i]" id="position">{{project.position}}</div>
-      <div  [@fadeIn] [@easeIn]="states[i]" id="sizeofteam"> <span class="title">Size of Team</span> <span id="size">{{project.team}}</span> </div>
-      <div  [@fadeIn]  [@easeIn]="states[i]" id="stack"> <span class="title">Stack</span> <span id="soft">{{project.stack}}</span></div>
-      <div  [@fadeIn] [@easeIn]="states[i]" id="link">  
+      <div  [@fadeIn]="states[i]" id="nameofproject"><h1>{{project.title}}</h1></div> 
+      <div  [@fadeIn]="states[i]" id="position">{{project.position}}</div>
+      <div  [@fadeIn]="states[i]" id="sizeofteam"> <span class="title">Size of Team</span> <span id="size">{{project.team}}</span> </div>
+      <div  [@fadeIn]="states[i]" id="stack"> <span class="title">Stack</span> <span id="soft">{{project.stack}}</span></div>
+      <div  [@fadeIn]="states[i]" id="link">  
         <div *ngIf="project.github as ''; else elseBlock">
           <span class="title">Github</span>
           <a class="links" href="{{project.github}}">CODE</a>
@@ -15,8 +15,8 @@
       </div>
     </ng-container>
     <ng-template #elseBlock>
-      <div [@fadeIn] [@easeIn]="states[i]" id="desc">
-        <h3 id="header-desc">DESCRIPTION</h3> <br> {{project.description}} 
+      <div [@fadeIn]="states[i]" id="desc">
+        <p id="header-desc">DESCRIPTION</p> <p>{{project.description}}</p>
       </div>
     </ng-template>
     <div id="page"><img [@page1State]="states[i]" src="../../assets/circle.svg" alt=""> <img [@page2State]="states[i]" src="../../assets/circle.svg" alt="" id="two"></div>

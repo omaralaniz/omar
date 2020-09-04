@@ -46,14 +46,15 @@ import {
       })),
       state('show',   style({
         transform: 'translate(30%, -135%) rotate(45deg)',
-        color: "#C19AB7"
+        color: "#fd5241"
       })),
       transition('hide => show', animate('150ms ease-out')),
       transition('show => hide', animate('150ms ease-in'))
     ]),
     trigger('infoMobile', [
       state('hide', style({
-        transform: "rotate(90deg)"
+        transform: "rotate(90deg)",
+        color: "#c5ff00"
       })),
       state('show',   style({
       })),
@@ -62,10 +63,10 @@ import {
     ]),
     trigger('mobileState', [
       state('show', style({
-        transform: "translateX(0)",
+        transform: "translateX(10%)",
       })),
       state('hide', style({
-        transform: "translateX(165%)",
+        transform: "translateX(190%)",
       })),
       transition('hide => show', animate('150ms ease-in')),
       transition('show => hide', animate('150ms ease-out'))
@@ -78,7 +79,7 @@ export class LinksBarComponent implements OnInit {
 
   github = "https://github.com/omaralaniz/";
   linkedin = "https://www.linkedin.com/in/omar-alaniz-971139140/";
-  resume = "../../assets/Resume-with-website.pdf";
+  resume = "../../assets/resume.pdf";
 
   linkedin_logo = "../../assets/linkedin-letters.svg";
   git_logo = "../../assets/github-logo.svg";

@@ -10,6 +10,7 @@ import {
   stagger,
   keyframes
 } from '@angular/animations';
+import * as keyframe from './keyframes'
 
 @Component({
   selector: 'app-projects-page',
@@ -23,14 +24,6 @@ import {
         animate('150ms ease-in', style({opacity: 1})),
       ])
     ]),
-    trigger('easeIn', [
-      state('hide', style({
-      })),
-      state('show',   style({
-      })),
-      transition('show => hide', animate('1s ease-out')),
-      transition('hide => show', animate('1s ease-in'))
-    ]),
     trigger('page1State', [
       state('hide', style({
       })),
@@ -40,7 +33,7 @@ import {
         opacity: '.5'
       })),
       transition('hide => show', animate('150ms ease-out')),
-      transition('show => hide', animate('150ms ease-in'))
+      transition('show => hide', animate('150ms ease-in')),
     ]),
     trigger('page2State', [
       state('hide', style({
@@ -59,13 +52,8 @@ import {
     trigger('cardAnimation', [
       transition('*=>*', [
         query(':enter', style({opacity: 0}), {optional: true}),
-
         query(':enter', stagger('300ms', [
-          animate('.5s ease-in', keyframes([
-            style({ opacity: 0, transform: 'translateY(100%) scale(.5)', offset: 0 }),
-            style({ opacity: .5, transform: 'translateY(10px) scale(.75)', offset: 0.3 }),
-            style({ opacity: 1, transform: 'translateY(0)', offset: 1 }),
-          ])) 
+          animate('.5s ease-in', keyframes(keyframe.cardAnimation))
         ]), {optional: true})
       ])
     ])
