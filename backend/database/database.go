@@ -4,42 +4,44 @@ import (
 	"context"
 	"fmt"
 	"log"
-	"net/url"
 	"os"
 	"reflect"
-	"time"
 
 	"github.com/joho/godotenv"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/mongo"
-	"go.mongodb.org/mongo-driver/mongo/options"
 )
 
-func Connect() *mongo.Client {
+var (
+	//Pointer to our database connection
+	Conn *mongo.Client
+)
 
-	err := godotenv.Load()
+// func Connect() *mongo.Client {
 
-	if err != nil {
-		fmt.Print(err)
-	}
+// 	err := godotenv.Load()
 
-	db := os.Getenv("db")
-	password := os.Getenv("db_pass")
-	dbAddress := os.Getenv("db_address")
+// 	if err != nil {
+// 		fmt.Print(err)
+// 	}
 
-	encodedPass := url.QueryEscape(password)
+// 	db := os.Getenv("db")
+// 	password := os.Getenv("db_pass")
+// 	dbAddress := os.Getenv("db_address")
 
-	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
-	defer cancel()
-	client, err := mongo.Connect(ctx, options.Client().ApplyURI(
-		"mongodb+srv://"+db+":"+encodedPass+"@"+dbAddress+"/test?w=majority",
-	))
-	if err != nil {
-		fmt.Println(err)
-	}
+// 	encodedPass := url.QueryEscape(password)
 
-	return client
-}
+// 	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
+// 	defer cancel()
+// 	client, err := mongo.Connect(ctx, options.Client().ApplyURI(
+// 		"mongodb+srv://"+db+":"+encodedPass+"@"+dbAddress+"/test?w=majority",
+// 	))
+// 	if err != nil {
+// 		fmt.Println(err)
+// 	}
+
+// 	return client
+// }
 
 func GetDocuments(documents interface{}, collectionName string) interface{} {
 	createQuery(documents, collectionName)
@@ -47,7 +49,7 @@ func GetDocuments(documents interface{}, collectionName string) interface{} {
 }
 
 func createQuery(document interface{}, collectionName string) {
-	client := Connect()
+	client := Conn
 	err := godotenv.Load()
 
 	documentsV := reflect.ValueOf(document).Elem()
