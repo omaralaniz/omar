@@ -46,8 +46,12 @@ The website’s primary purpose is to display new and old projects. This project
 
 ## 🚀 Deployment <a name = "deployment"></a>
 
-- [Google App Engine (GAE)](https://cloud.google.com/) - Deployed docker container
-- [Google Compute Engine (GCE)](https://cloud.google.com/) - Run backend using a Docker Container
+- Currrently being used:
+  - [Heroku](https://www.heroku.com/) Container registry for the docker container
+  - Deployed using [Heroku](https://www.heroku.com/)
+- Previously used:
+  - [Google App Engine (GAE)](https://cloud.google.com/) - Deployed docker container
+  - [Google Compute Engine (GCE)](https://cloud.google.com/) - Run backend using a Docker Container
 - [Google's Firebase](https://firebase.google.com/) - Host static fronted
 - [Google Domains](https://domains.google/) - Domain servcies
 

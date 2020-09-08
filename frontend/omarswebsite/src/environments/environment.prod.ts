@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  url: "https://api.omaralaniz.com/api/projects"
+  url: "https://sheltered-hamlet-09736.herokuapp.com/api/projects"
 };
