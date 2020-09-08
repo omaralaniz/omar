@@ -3,7 +3,6 @@ FROM golang:alpine AS builder
 WORKDIR /go/src/app
 COPY . .
 RUN apk add --update go git build-base
-RUN apk add --no-cache git`
 RUN go get -d -v ./...
 RUN go build -o /go/bin/app main.go
 
