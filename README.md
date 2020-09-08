@@ -28,7 +28,7 @@
 - [Authors](#authors)
 
 ## 📟 About <a name = "about"></a>
-
+[www.omaralaniz.com](https://www.omaralaniz.com)
 The website’s primary purpose is to display new and old projects. This project allows me to play and test new web designs, technologies, and security standards. The website will be ever-changing to represent my growth as a developer, security engineer, and the volatile tech field. 
 
 ## ⛏️ Built Using <a name = "built_using"></a>
