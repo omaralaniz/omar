@@ -12,36 +12,8 @@ import (
 	"go.mongodb.org/mongo-driver/mongo"
 )
 
-var (
-	//Pointer to our database connection
-	Conn *mongo.Client
-)
-
-// func Connect() *mongo.Client {
-
-// 	err := godotenv.Load()
-
-// 	if err != nil {
-// 		fmt.Print(err)
-// 	}
-
-// 	db := os.Getenv("db")
-// 	password := os.Getenv("db_pass")
-// 	dbAddress := os.Getenv("db_address")
-
-// 	encodedPass := url.QueryEscape(password)
-
-// 	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
-// 	defer cancel()
-// 	client, err := mongo.Connect(ctx, options.Client().ApplyURI(
-// 		"mongodb+srv://"+db+":"+encodedPass+"@"+dbAddress+"/test?w=majority",
-// 	))
-// 	if err != nil {
-// 		fmt.Println(err)
-// 	}
-
-// 	return client
-// }
+//Pointer to our database connection
+var Conn *mongo.Client
 
 func GetDocuments(documents interface{}, collectionName string) interface{} {
 	createQuery(documents, collectionName)

@@ -9,7 +9,7 @@ import (
 
 	"github.com/gin-gonic/gin"
 	"github.com/joho/godotenv"
-	DB "github.com/omaralaniz/backend/database"
+	DB "github.com/omaralaniz/omar/backend/database"
 	handler "github.com/omaralaniz/omar/backend/handlers"
 	repo "github.com/omaralaniz/omar/backend/repository"
 	cors "github.com/rs/cors/wrapper/gin"
@@ -28,7 +28,7 @@ func initDB() {
 
 	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
 	defer cancel()
-	DB.Conn, err := mongo.Connect(ctx, options.Client().ApplyURI(
+	DB.Conn, err = mongo.Connect(ctx, options.Client().ApplyURI(
 		"mongodb+srv://"+db+":"+encodedPass+"@"+dbAddress+"/test?w=majority",
 	))
 	if err != nil {
@@ -42,11 +42,8 @@ func main() {
 	router := gin.Default()
 	projects := repo.New()
 	initDB()
-	defer DB.Conn.Close()
 
-	if err != nil {
-		panic(err)
-	}
+	defer DB.Conn.Disconnect(context.Background())
 
 	c := cors.New(cors.Options{
 		AllowedOrigins:   []string{"https://www.omaralaniz.com", "https://omaralaniz.com", "http://localhost:4200"},
