@@ -1,34 +1,34 @@
 
 <div class="container"> 
   <div *ngIf="screenWidth > 820" [@linkState]="state" class="item1">
-    <a href={{linkedin}}>
+    <a href={{linkedin}} target="_blank" rel="noopener noreferrer">
       <span class="linkedin"><img src={{linkedin_logo}} alt="LinkedIn"></span>
     </a>
   </div>
   <div *ngIf="screenWidth > 820" [@linkState]="state" class="item2">
-    <a href={{github}}>
+    <a href={{github}} target="_blank" rel="noopener noreferrer">
       <span class="git"><img src={{git_logo}} alt="GitHub"></span>
     </a>
   </div>
   <div *ngIf="screenWidth > 820" [@linkState]="state" class="item3">
-    <a href={{resume}}>
+    <a href={{resume}} target="_blank" rel="noopener noreferrer">
       <span class="skills"><img src={{resume_logo}} alt="Resume"></span>
     </a>
   </div> 
 
   <!-- Mobile screens -->
   <div *ngIf="screenWidth < 820" [@mobileState]="state" class="item1">
-    <a href={{linkedin}}>
+    <a href={{linkedin}} target="_blank" rel="noopener noreferrer"> 
       <span class="linkedin"><img src={{linkedin_mobile}} alt="LinkedIn"></span>
     </a>
   </div>
   <div *ngIf="screenWidth < 820" [@mobileState]="state" class="item2">
-    <a href={{github}}>
+    <a href={{github}} target="_blank" rel="noopener noreferrer">
       <span class="git"><img src={{github_mobile}} alt="GitHub"></span>
     </a>
   </div>
   <div *ngIf="screenWidth < 820" [@mobileState]="state" class="item3">
-    <a href={{resume}}>
+    <a href={{resume}} target="_blank" rel="noopener noreferrer">
       <span class="skills"><img src={{resume_mobile}} alt="Resume"></span>
     </a>
   </div>

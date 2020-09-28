@@ -1,4 +1,5 @@
 import { Component, OnInit, HostListener} from '@angular/core';
+import { ProjectsService } from '../projects.service';
 import {
   trigger,
   state,
@@ -17,14 +18,19 @@ export class LandingPageComponent implements OnInit {
   screenHeight: number;
   screenWidth: number;
 
-  constructor() { 
+  constructor(private projectsService: ProjectsService) { 
     this.getScreenSize;
+    this.getProjects();
   }
 
   @HostListener('window:resize', ['$event'])
   getScreenSize($event?){
     this.screenHeight = window.innerHeight;
     this.screenWidth = window.innerWidth;
+  }
+
+  async getProjects(){
+    await this.projectsService.getProjects();
   }
 
   async ngOnInit() {

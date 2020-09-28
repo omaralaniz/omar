@@ -79,7 +79,7 @@ export class LinksBarComponent implements OnInit {
 
   github = "https://github.com/omaralaniz/";
   linkedin = "https://www.linkedin.com/in/omar-alaniz-971139140/";
-  resume = "../../assets/resume.pdf";
+  resume = "../../assets/Resume.pdf";
 
   linkedin_logo = "../../assets/linkedin-letters.svg";
   git_logo = "../../assets/github-logo.svg";

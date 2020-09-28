@@ -9,7 +9,7 @@
       <div  [@fadeIn]="states[i]" id="link">  
         <div *ngIf="project.github as ''; else elseBlock">
           <span class="title">Github</span>
-          <a class="links" href="{{project.github}}">CODE</a>
+          <a class="links" href="{{project.github}}" target="_blank" rel="noopener noreferrer">CODE</a>
         </div>
         <ng-template #elseBlock><span class="title">Github</span> <span class="links">PRIVATE</span></ng-template>
       </div>

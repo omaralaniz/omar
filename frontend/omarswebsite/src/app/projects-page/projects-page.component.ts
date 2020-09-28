@@ -32,8 +32,8 @@ import * as keyframe from './keyframes'
         height: '25%', 
         opacity: '.5'
       })),
-      transition('hide => show', animate('150ms ease-out')),
-      transition('show => hide', animate('150ms ease-in')),
+      transition('hide => show', animate('170ms ease-out')),
+      transition('show => hide', animate('170ms ease-in')),
     ]),
     trigger('page2State', [
       state('hide', style({
@@ -46,9 +46,20 @@ import * as keyframe from './keyframes'
         height: '40%',
         opacity: '1' 
       })),
-      transition('hide => show', animate('150ms ease-out')),
-      transition('show => hide', animate('150ms ease-in'))
+      transition('hide => show', animate('170ms ease-out')),
+      transition('show => hide', animate('170ms ease-in'))
     ]),
+    //TODO: finish card pop-up when description appears
+    // trigger('card', [
+    //   state('hide', style({
+    //   })),
+    //   state('show',   style({
+    //     width: '300px',
+    //     height: '400px'
+    //   })),
+    //   transition('hide => show', animate('150ms ease-out')),
+    //   transition('show => hide', animate('150ms ease-in'))
+    // ]),
     trigger('cardAnimation', [
       transition('*=>*', [
         query(':enter', style({opacity: 0}), {optional: true}),
