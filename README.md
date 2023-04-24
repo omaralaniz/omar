@@ -14,7 +14,7 @@
 
 ---
 
-<p align="center"> A portfolio for my job hunt needs and professional needs!
+<p align="center"> A portfolio for my job hunt needs and professional needs!!
     <br> 
 </p>
 
